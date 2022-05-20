@@ -14,7 +14,7 @@ set tics in
 set xtics nomirror
 set ytics nomirror
 
-scale = 3
+scale = 0.02
 set style circle radius screen 0.005 
 
 set palette rgb 34,35,36
