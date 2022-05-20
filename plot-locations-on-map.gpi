@@ -14,7 +14,7 @@ set tics in
 set xtics nomirror
 set ytics nomirror
 
-scale = 0.5
+scale = 3
 set style circle radius screen 0.005 
 
 set palette rgb 34,35,36
@@ -55,7 +55,10 @@ unset ytics
 #set style line 5 lc rgb "red" lw 2 pt 44
 
 set output 'locations-on-world-map.pdf'
-plot 'world-50m.txt' not w l ls 1, \
-     'lat-lng-data.txt' u 3:2:4  with circles palette fs solid noborder notitle
+# 1 variable
+# plot 'world-50m.txt' not w l ls 1, 'lat-lng-data.txt' u 3:2:5  with circles palette fs solid noborder notitle
+
+# 2 variables
+plot 'world-50m.txt' not w l ls 1, 'lat-lng-data.txt' u 3:2:(scale*$4):5  with circles palette fs solid noborder notitle
 
 unset output
