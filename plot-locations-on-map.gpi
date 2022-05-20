@@ -38,6 +38,7 @@ unset key
 # Colors chosen from colorbrewer; print- and photocopy-friendly.
 set style line 1 lt 1 lc rgb "#20808080"   lw 0.5 pt  6 ps 0.5
 set style line 2 lt 1 lc rgb "#99cc0000"   lw 0.05 pt  6 ps 0.1
+set style line 3 lt 1 lc rgb "black"   lw 0.005 pt  1 ps 0.01
 
 set key top left
 
@@ -59,6 +60,6 @@ set output 'locations-on-world-map.pdf'
 # plot 'world-50m.txt' not w l ls 1, 'lat-lng-data.txt' u 3:2:5  with circles palette fs solid noborder notitle
 
 # 2 variables
-plot 'world-50m.txt' not w l ls 1, 'lat-lng-data.txt' u 3:2:(scale*$4):5  with circles palette fs solid noborder notitle
+plot 'world-50m.txt' not w l ls 3, 'lat-lng-data.txt' u 3:2:(scale*$4):5  with circles palette fs solid border 2 notitle
 
 unset output
