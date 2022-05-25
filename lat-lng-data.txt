@@ -1,3 +1,7 @@
-#Index Latitude Longitude Latency NoOfHealthcareFacilities City
-1 61.218056 -149.900284 104.822 43 Anchorage
-2 64.837776 -147.716385 158.869 9 Fairbanks
+#Index Latitude Longitude Latency NoOfHealthcareFacilities City Country
+1 61.218056 -149.900284 104.822 43 Anchorage AK_USA
+2 64.837776 -147.716385 158.869 9 Fairbanks AK_USA
+3 41.30517666789044, 69.23544876285268 188 412 Tashkent Uzbekhistan
+4 42.87382603006726, 74.56610790480931 182.25 517  Bishkek Kyrgyztan
+5 46.82129432611402, -71.24843590063156 45.623 245 Quebec_City Canada
+6 45.362618667373034, -66.28987067697093 43.435 58 Saint_John Canada
