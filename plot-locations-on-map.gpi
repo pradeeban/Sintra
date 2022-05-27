@@ -29,6 +29,8 @@ set zlabel font "Verdana,16"
 
 set zlabel "Count" rotate parallel offset 0,0,0
 
+set colorbox horiz user origin graph 0,screen .08 size graph 1,screen .04
+
 set ticslevel 0
  
 set encoding utf8
@@ -44,9 +46,9 @@ set style line 3 lt 1 lc rgb "black"   lw 0.005 pt  1 ps 0.01
 set key top left
 
 set tmargin 0.5
-set rmargin 1
+set rmargin 1.5
 set bmargin 0.5
-set lmargin 1
+set lmargin 0.5
 
 unset xlabel
 unset xtics
