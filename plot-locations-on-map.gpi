@@ -1,4 +1,4 @@
-set terminal pdfcairo transparent enhanced font "Verdana, 16" linewidth 2 rounded dashed
+set terminal pdfcairo transparent enhanced font "Verdana, 12" linewidth 2 rounded dashed
 
 set style line 80 lc rgb "#404040" lt 1 lw 1
 set border 0 back ls 80
@@ -6,9 +6,6 @@ set border 0 back ls 80
 set style line 81 lc rgb "#909090" lt 0 lw 0.4
 set style line 82 lc rgb "#a4a4a4" lt 0 lw 0.2
 
-# NOTE: Grid lines can be distracting on a map.
-# set grid back xtics ytics ls 81, ls 82
-# set grid back ls 81
 
 set tics in
 set xtics nomirror
@@ -18,16 +15,8 @@ scale = 150.0
 set style circle radius screen 0.005 
 
 #set palette rgb 34,35,36
-#set palette rgb 36,30,36
-set xtics font "Verdana,16" 
-set ytics font "Verdana,16" 
-set ztics font "Verdana,16" 
 
-set xlabel font "Verdana,16"  
-set ylabel font "Verdana,16" 
-set zlabel font "Verdana,16" 
-
-set zlabel "Count" rotate parallel offset 0,0,0
+set cblabel "Number of healthcare sites in the region (city/town)" norotate offset -12, 3.3
 
 set colorbox horiz user origin graph 0,screen .08 size graph 1,screen .04
 
@@ -47,7 +36,7 @@ set key top left
 
 set tmargin 0.5
 set rmargin 1.5
-set bmargin 0.5
+set bmargin 0.7
 set lmargin 0.5
 
 unset xlabel
@@ -59,10 +48,7 @@ unset ytics
 #set style line 5 lc rgb "red" lw 2 pt 44
 
 set output 'locations-on-world-map.pdf'
-# 1 variable
-# plot 'world-50m.txt' not w l ls 1, 'lat-lng-data.txt' u 3:2:5  with circles palette fs solid border 2 notitle
 
-# 2 variables
 plot 'world-50m.txt' not w l ls 3, 'lat-lng-data.txt' u 3:2:(scale/$4):5  with circles palette fs solid noborder notitle
 
 #plot 'world-50m.txt' not w l ls 3, 'lat-lng-data.txt' u 3:2:($5/100):(1/$4)  with circles palette fs solid noborder notitle
