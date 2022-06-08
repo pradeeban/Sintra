@@ -15,6 +15,13 @@ scale = 150.0
 set style circle radius screen 0.005 
 
 #set palette rgb 34,35,36
+#set palette rgb 8,4,33
+#set palette rgb 1,31,33
+#set palette rgb 1,31,2
+#set palette rgb 1,31,36
+#set palette rgb 1,35,36
+#set palette rgb 1,7,-5
+
 
 set cblabel "Number of healthcare sites in the region (city/town)" norotate offset -12, 3.3
 
