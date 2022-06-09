@@ -43,7 +43,7 @@ set key top left
 
 set tmargin 0.5
 set rmargin 1.5
-set bmargin 0.7
+set bmargin 2.7
 set lmargin 0.5
 
 unset xlabel
