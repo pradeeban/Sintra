@@ -54,13 +54,8 @@ unset xtics
 unset ylabel
 unset ytics
 
-#set style line 5 lc rgb "red" lw 2 pt 44
-
 set output 'alaska.pdf'
 
 plot 'alaska.txt' u 3:2:(scale/$4):5  with circles palette fs solid noborder notitle, 'alaska.txt' u 3:2:6 with labels offset 0,char 1 notitle
-
-
-#plot 'world-50m.txt' not w l ls 3, 'lat-lng-data.txt' u 3:2:($5/100):(1/$4)  with circles palette fs solid noborder notitle
 
 unset output
