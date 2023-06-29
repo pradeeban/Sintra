@@ -1,0 +1,5 @@
+#Index Latitude Longitude Latency_ms NoOfHealthcareFacilities Source-City Median_Upload_Speed_Mbps
+1 61.218056 -149.900284 46.56 44 Anchorage 10.65 
+2 64.837776 -147.716385 49.91 9 Fairbanks 11.14
+3 0 0 68.63 0 Utqiagvik 2.81
+40 0 4.36
