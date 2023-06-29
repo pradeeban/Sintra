@@ -65,3 +65,11 @@ set output 'pula-alaska.pdf'
 plot 'alaska.txt' u 3:2:(scale/$4):5  with circles palette fs solid noborder notitle, 'pula-alaska.csv' u 3:2:6 with labels offset 0,char 1 notitle
 
 unset output
+
+scale = 100.0
+
+set output 'bm-alaska.pdf'
+
+plot 'bm-alaska.txt' u 3:2:($4/scale):5  with circles palette fs solid noborder notitle, 'bm-alaska.txt' u 3:2:6 with labels offset 0,char 1 notitle
+
+unset output
