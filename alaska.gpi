@@ -15,12 +15,12 @@ scale = 10.0
 set style circle radius screen 0.005 
 
 #set palette rgb 34,35,36
-#set palette rgb 8,4,33
-#set palette rgb 1,31,33
+##set palette rgb 8,4,33
+##set palette rgb 1,31,33
 #set palette rgb 1,31,2
 #set palette rgb 1,31,36
-#set palette rgb 1,35,36
-#set palette rgb 1,7,-5
+##set palette rgb 1,35,36
+set palette rgb 1,7,-5
 
 set xrange [-151:-146]
 set yrange [60:65.5]
