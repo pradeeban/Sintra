@@ -22,8 +22,8 @@ set style circle radius screen 0.005
 ##set palette rgb 1,35,36
 set palette rgb 1,7,-5
 
-set xrange [-151:-146]
-set yrange [60:65.5]
+set xrange [-171:-126]
+set yrange [53:72.5]
 
 set cblabel "Number of healthcare sites in the region (city/town)" norotate offset -12, 3.3
 
@@ -66,10 +66,8 @@ plot 'alaska.txt' u 3:2:(scale/$4):5  with circles palette fs solid noborder not
 
 unset output
 
-iscale = 100.0
-
 set output 'bm-alaska.pdf'
 
-plot 'bm-alaska.txt' u 3:2:(scale/$4):5  with circles palette fs solid noborder notitle, 'bm-alaska.txt' u 3:2:6 with labels offset 0,char 1 notitle
+plot 'bm-alaska.txt' u 3:2:(scale/$4):5  with circles palette fs solid noborder notitle, 'bm-alaska.txt' u 3:2:6 with labels offset 0,char 0 notitle
 
 unset output
